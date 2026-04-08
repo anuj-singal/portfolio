@@ -7,7 +7,7 @@ const Grid = () => {
   return (
     <section
       id="about"
-      className="relative z-10 py-20 max-w-7xl mx-auto px-4"
+      className="relative z-10 py-20  max-w-7xl mx-auto px-4"
     >
       <BentoGrid>
         {gridItems.map((item, i) => (
