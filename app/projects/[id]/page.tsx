@@ -17,7 +17,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
         {/* 🔙 BACK */}
         <Link
-          href="/"
+          href="/#projects"
           className="inline-flex items-center text-sm text-[#BEC1DD] hover:text-white transition mb-8"
         >
           <FaArrowLeft className="mr-2 text-xs" />

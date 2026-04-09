@@ -88,7 +88,7 @@ const BadgesPage = () => {
       <div className="max-w-5xl mx-auto flex flex-col gap-16">
         {/* Back Button */}
         <button
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/#activity")}
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#04071D] to-[#0C0E23] text-white font-semibold rounded-xl hover:scale-105 transition-transform"
         >
           ← Back to Portfolio
