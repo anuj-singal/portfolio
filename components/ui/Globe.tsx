@@ -59,7 +59,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
   const [globeData, setGlobeData] = useState<any[]>([]);
   const globeRef = useRef<any>(null);
 
-  const defaultProps = {
+  const defaultProps = useMemo(() => ({
     pointSize: 1,
     atmosphereColor: "#ffffff",
     showAtmosphere: true,
@@ -74,7 +74,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     rings: 1,
     maxRings: 3,
     ...globeConfig,
-  };
+  }), [globeConfig]);
 
   // ✅ Build data ONCE
   useEffect(() => {
@@ -113,48 +113,48 @@ export function Globe({ globeConfig, data }: WorldProps) {
   }, [data]);
 
   // ✅ Init globe safely
-  useEffect(() => {
-    if (!globeRef.current || globeData.length === 0) return;
+    useEffect(() => {
+      if (!globeRef.current || globeData.length === 0) return;
 
-    const globe = globeRef.current;
+      const globe = globeRef.current;
 
-    const mat = globe.globeMaterial();
-    mat.color = new Color(defaultProps.globeColor);
-    mat.emissive = new Color(defaultProps.emissive);
-    mat.emissiveIntensity = defaultProps.emissiveIntensity;
-    mat.shininess = defaultProps.shininess;
+      const mat = globe.globeMaterial();
+      mat.color = new Color(defaultProps.globeColor);
+      mat.emissive = new Color(defaultProps.emissive);
+      mat.emissiveIntensity = defaultProps.emissiveIntensity;
+      mat.shininess = defaultProps.shininess;
 
-    globe
-      .hexPolygonsData(countries.features)
-      .hexPolygonResolution(3)
-      .hexPolygonMargin(0.7)
-      .showAtmosphere(defaultProps.showAtmosphere)
-      .atmosphereColor(defaultProps.atmosphereColor)
-      .atmosphereAltitude(defaultProps.atmosphereAltitude)
-      .hexPolygonColor(() => defaultProps.polygonColor);
+      globe
+        .hexPolygonsData(countries.features)
+        .hexPolygonResolution(3)
+        .hexPolygonMargin(0.7)
+        .showAtmosphere(defaultProps.showAtmosphere)
+        .atmosphereColor(defaultProps.atmosphereColor)
+        .atmosphereAltitude(defaultProps.atmosphereAltitude)
+        .hexPolygonColor(() => defaultProps.polygonColor);
 
-    // arcs
-    globe
-      .arcsData(data)
-      .arcStartLat((d: any) => d.startLat)
-      .arcStartLng((d: any) => d.startLng)
-      .arcEndLat((d: any) => d.endLat)
-      .arcEndLng((d: any) => d.endLng)
-      .arcColor((d: any) => d.color)
-      .arcAltitude((d: any) => d.arcAlt)
-      .arcStroke(() => [0.32, 0.28, 0.3][Math.floor(Math.random() * 3)])
-      .arcDashLength(defaultProps.arcLength)
-      .arcDashGap(15)
-      .arcDashAnimateTime(defaultProps.arcTime);
+      globe
+        .arcsData(data)
+        .arcStartLat((d: any) => d.startLat)
+        .arcStartLng((d: any) => d.startLng)
+        .arcEndLat((d: any) => d.endLat)
+        .arcEndLng((d: any) => d.endLng)
+        .arcColor((d: any) => d.color)
+        .arcAltitude((d: any) => d.arcAlt)
+        .arcStroke(() => [0.32, 0.28, 0.3][Math.floor(Math.random() * 3)])
+        .arcDashLength(defaultProps.arcLength)
+        .arcDashGap(15)
+        .arcDashAnimateTime(defaultProps.arcTime);
 
-    // points
-    globe
-      .pointsData(data)
-      .pointColor((d: any) => d.color)
-      .pointsMerge(true)
-      .pointRadius(2);
+      globe
+        .pointsData(data)
+        .pointColor((d: any) => d.color)
+        .pointsMerge(true)
+        .pointRadius(2);
 
-  }, [globeData, data]);
+    // ✅ ADD THIS LINE
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [globeData, data]);
 
   // ✅ Rings animation
   useEffect(() => {

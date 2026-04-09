@@ -6,6 +6,8 @@ const SplineViewerWrapper = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const container = containerRef.current; // ✅ capture ref
+
     // dynamically load Spline script
     const script = document.createElement("script");
     script.src =
@@ -22,15 +24,14 @@ const SplineViewerWrapper = () => {
     viewer.style.width = "100%";
     viewer.style.height = "100%";
 
-    containerRef.current?.appendChild(viewer);
+    container?.appendChild(viewer);
 
     return () => {
       document.body.removeChild(script);
-      if (containerRef.current) containerRef.current.innerHTML = "";
+      if (container) container.innerHTML = ""; // ✅ use captured ref
     };
   }, []);
 
-  // only renders an empty div on SSR → no mismatch
   return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />;
 };
 
