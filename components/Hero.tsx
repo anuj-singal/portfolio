@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="pb-20 pt-16 relative">
+    <div className="min-h-screen pt-16 pb-10 flex items-center relative">
       {/* Spotlights */}
       <div>
         <Spotlight
@@ -44,7 +44,7 @@ const Hero = () => {
 
       {/* Background grid */}
       <div
-        className="h-screen w-full absolute top-0 left-0 flex items-center justify-center
+        className="absolute inset-0 w-full
         dark:bg-black-100 bg-white 
         dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]"
       >
@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row items-center justify-between relative my-20 z-10 max-w-7xl mx-auto px-4 gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between relative z-10 max-w-7xl mx-auto px-4 gap-10 w-full">
         {/* LEFT SIDE */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left px-2">
           <p className="uppercase tracking-widest text-xs text-blue-400 mb-2">
@@ -75,7 +75,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons + Social */}
-        <div className="mt-3 flex flex-row items-center gap-5">
+        <div className="mt-6 flex flex-row items-center gap-5 flex-wrap justify-center lg:justify-start">
           {/* Resume Button */}
           <a
             href="/anuj_resume.pdf"

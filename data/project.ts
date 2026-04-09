@@ -27,7 +27,7 @@ export const projects: Project[] = [
 
     des: "AI-powered Text-to-Speech SaaS for generating realistic speech and cloning voices instantly.",
 
-    live: "https://timber-ai.vercel.app",
+    live: "https://timbre-ai.vercel.app",
     github: "https://github.com/anuj-singal/Timbre_AI",
     status: "Completed",
 
@@ -75,7 +75,7 @@ export const projects: Project[] = [
 
     des: "AI-powered media platform for uploading, editing, and optimizing images and videos.",
 
-    live: "https://cloudinary-studio.vercel.app",
+    live: "https://cloudinarystudio.vercel.app",
     github: "https://github.com/anuj-singal/CloudinaryStudio",
     status: "Completed",
 
@@ -122,7 +122,7 @@ export const projects: Project[] = [
 
     des: "Real-time chat application with secure authentication and instant messaging.",
 
-    live: "https://chatzy-app.vercel.app",
+    live: "https://chatzy-0u8l.onrender.com",
     github: "https://github.com/anuj-singal/chatzy",
     status: "Completed",
 

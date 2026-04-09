@@ -107,7 +107,7 @@ const BadgesPage = () => {
         <div className="flex flex-wrap justify-center gap-4 mt-10">
           <button
             onClick={() =>
-              window.open("https://www.linkedin.com/in/anuj-singal", "_blank")
+              window.open("https://www.linkedin.com/in/anujsingal", "_blank")
             }
             className="px-8 py-4 bg-gradient-to-r from-[#091782] to-[#0C0E23] text-white font-semibold rounded-xl hover:scale-105 hover:bg-purple-700 transition-all"
           >

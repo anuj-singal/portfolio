@@ -171,14 +171,14 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/yourusername",
+    link: "https://github.com/anuj-singal",
     name: "GitHub",
   },
 
   {
     id: 2,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/yourusername",
+    link: "https://www.linkedin.com/in/anujsingal",
     name: "LinkedIn",
   },
 ];
