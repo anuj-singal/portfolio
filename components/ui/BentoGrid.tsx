@@ -74,7 +74,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("anujsingal203@email.com");
+    navigator.clipboard.writeText("anujsingal203@gmail.com");
 
     //  force replay every click
     setCopied(false);
@@ -158,7 +158,7 @@ export const BentoGridItem = ({
 
         {/* 🧠 Tech Stack */}
         {id === 3 && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+          <div className="grid grid-cols-3 sm:grid-cols-3 gap-2 mt-10">
             {techStack.map((tech, i) => (
               <span
                 key={i}
