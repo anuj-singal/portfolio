@@ -70,10 +70,10 @@ const Hero = () => {
           </p>
 
           {/* Buttons + Social */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 mt-2">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-5 mt-2">
 
             {/* Resume Button */}
-            <a className="mb-10"
+            <a 
               href="/anuj_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
