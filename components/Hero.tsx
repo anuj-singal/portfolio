@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons + Social */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-5 mt-2">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-5 ">
 
             {/* Resume Button */}
             <a 
@@ -91,7 +91,7 @@ const Hero = () => {
                 href="https://linkedin.com/in/anujsingal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-600 rounded-lg hover:scale-110 transition-transform"
+                className="flex mt-10 items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-600 rounded-lg hover:scale-110 transition-transform"
               >
                 <Image src="/link.svg" alt="LinkedIn" width={22} height={22} />
               </a>
@@ -100,7 +100,7 @@ const Hero = () => {
                 href="https://github.com/anuj-singal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-600 rounded-lg hover:scale-110 transition-transform"
+                className="flex mt-10 items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-600 rounded-lg hover:scale-110 transition-transform"
               >
                 <Image src="/git.svg" alt="GitHub" width={22} height={22} />
               </a>
