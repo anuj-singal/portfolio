@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Anuj Singal — Full Stack Developer
 
-## Getting Started
+<p align="center">
+  <b>Building modern, scalable, and high-performance web experiences.</b>
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://your-portfolio-link.com"><strong>🌐 Live Portfolio</strong></a> •
+  <a href="mailto:anujsingal203@gmail.com"><strong>📬 Contact Me</strong></a>
+</p>
+
+---
+
+## 🧠 About Me
+
+I’m a **Full Stack MERN Developer** focused on building products that are not just functional — but **beautiful, fast, and impactful**.
+
+This portfolio is a reflection of:
+
+* My **engineering skills**
+* My **UI/UX thinking**
+* My ability to build **production-ready applications**
+
+---
+
+## ⚡ Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,mongodb,tailwind,ts,js,git,github" />
+
+</p>
+
+---
+
+## ✨ Features
+
+* 🎨 **Modern UI/UX** with clean design system
+* ⚡ **Optimized Performance** using Next.js
+* 📱 Fully **Responsive** across all devices
+* 🎬 Smooth animations & interactions
+* 📬 **Contact Form with EmailJS integration**
+* 🌐 Social links integration
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="https://your-screenshot-link.com" alt="Portfolio Preview" width="100%" />
+</p>
+
+---
+
+## 🏗️ Architecture
+
+```bash
+.
+├── components      # Reusable UI components
+├── data            # Static data (projects, socials)
+├── public          # Assets (images, icons)
+├── app / pages     # Routes
+├── styles          # Global styles
+└── utils           # Helpers
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/anuj-singal/portfolio.git
+cd portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Setup environment variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+### Run the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📬 Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Let’s build something amazing together:
 
-## Learn More
+* 📧 Email: [anujsingal203@gmail.com](mailto:anujsingal203@gmail.com)
+* 💼 LinkedIn: https://linkedin.com/in/your-profile
+* 🐙 GitHub: https://github.com/anuj-singal
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 What Makes This Different?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This isn’t just a portfolio — it’s built like a **real product**:
 
-## Deploy on Vercel
+* Thoughtful **component architecture**
+* Clean and **scalable codebase**
+* Strong focus on **user experience**
+* Production-level **form handling (EmailJS)**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔮 Future Improvements
+
+* 📝 Blog / Articles section
+* 📊 Analytics dashboard
+* 📦 Project case studies (deep dive)
+* ♿ Accessibility improvements
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 🧠 Get inspired
+
+---
+
+<p align="center">
+  <b>Built with 💜 by Anuj Singal</b>
+</p>
