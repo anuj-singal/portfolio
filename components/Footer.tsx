@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-6 md:w-1/3">
           <h2 className="text-white text-xl font-semibold">Connect with me</h2>
           <p className="text-white-200 mb-4">
-            Let’s get in touch! Follow me on GitHub, LinkedIn or send me an email.
+            Let&apos;ss get in touch! Follow me on GitHub, LinkedIn or send me an email.
           </p>
           {socialMedia.map((info) => (
             <a
