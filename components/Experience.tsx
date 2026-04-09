@@ -8,8 +8,8 @@ const Experience = () => {
   return (
     <div className="py-20 w-full">
       {/* Heading */}
-      <h1 className="heading text-2xl md:text-2xl font-extrabold ">
-        My <span className="text-purple">Work Experience</span>
+      <h1 className="heading text-center  ">
+        My activities <span className="text-purple"> and achievements</span>
       </h1>
 
       {/* View Badges Button */}
