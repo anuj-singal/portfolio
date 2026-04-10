@@ -10,28 +10,17 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://unpkg.com/@splinetool/viewer@1.12.74/build/spline-viewer.js";
-    script.type = "module";
-    document.body.appendChild(script);
-
-    const handleResize = () => {
-      const viewer = document.querySelector("spline-viewer");
-      if (viewer) {
-        const parent = viewer.parentElement;
-        if (parent) {
-          parent.innerHTML = parent.innerHTML;
-        }
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    if (!customElements.get("spline-viewer")) {
+      const script = document.createElement("script");
+      script.src =
+        "https://unpkg.com/@splinetool/viewer@1.12.74/build/spline-viewer.js";
+      script.type = "module";
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
-    <section className="relative w-full flex items-center justify-center min-h-[100svh] pt-28 md:pt-32 pb-10">
+    <section className="relative w-full flex items-center justify-center min-h-[calc(100vh-80px)] mt-[80px] overflow-hidden">
       
       {/* Spotlights */}
       <div>
@@ -49,7 +38,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-10">
 
         {/* LEFT SIDE */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 sm:gap-5">
@@ -70,7 +59,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons + Social */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-5 ">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5">
 
             {/* Resume Button */}
             <a 
@@ -108,9 +97,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE → SPLINE (UNCHANGED) */}
-        <div className="hidden md:block w-full lg:w-1/2 h-[500px] lg:h-[700px] overflow-hidden relative">
-          <div className="absolute inset-0 scale-[1.1] translate-y-10">
+        {/* RIGHT SIDE → SPLINE (watermark hidden safely) */}
+        <div className="hidden md:flex w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[600px] items-center justify-center relative overflow-hidden">
+          <div className="absolute inset-0 scale-[1.15] md:scale-[1.2] translate-y-12 md:translate-y-16 lg:translate-y-20">
             <spline-viewer url="https://prod.spline.design/19H4fIcp4dPX2XfY/scene.splinecode" />
           </div>
         </div>
