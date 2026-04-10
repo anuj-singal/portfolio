@@ -105,7 +105,7 @@ const Hero = () => {
         </div>
 
         {/* MOBILE FALLBACK */}
-        <div className="md:hidden text-center mt-6 pb-4">
+        <div className="md:hidden text-center mt-2 pb-2">
           <p className="text-sm sm:text-base text-gray-400">
             🚀 Interactive 3D experience available on desktop
           </p>
