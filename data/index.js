@@ -161,10 +161,10 @@ export const workExperience = [
   {
     id: 4,
     title: "Lead Full Stack Developer",
-    desc: "Led full-stack development for personal and client projects, using modern web technologies and best practices.",
+    desc: "Led full-stack development for multiple projects, managing end-to-end architecture and delivering scalable web applications using modern technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
-  },
+  }
 ];
 
 export const socialMedia = [
